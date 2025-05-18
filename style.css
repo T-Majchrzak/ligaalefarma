@@ -82,3 +82,14 @@ footer {
 .back-link:hover {
   text-decoration: underline;
 }
+img {
+  background: #ddd;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 1.2rem;
+}
