@@ -1,2 +1,0 @@
-# ligaalefarma
-projekcik
