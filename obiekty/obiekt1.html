@@ -6,21 +6,169 @@
   <title>Bakery</title>
   <link rel="stylesheet" href="../style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .object-page {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .object-image img {
+      display: block;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    .object-description {
+      margin: 20px 0;
+      font-size: 16px;
+    }
+
+    .object-description .highlight {
+      color: green;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .object-description img.icon {
+      width: 18px;
+      vertical-align: text-bottom;
+    }
+
+    .products-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .product-card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .product-card img {
+      width: 48px;
+      margin-bottom: 5px;
+    }
+
+    .product-card .level {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .product-card .time, .product-card .rewards {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Bakery</h1>
     <a href="../index.html" class="back-link">← Wróć do katalogu</a>
   </header>
+
   <main class="object-page">
-    <div class="object-image"><img src="images/Bakery.jpeg"></div>
+    <div class="object-image">
+      <img src="images/Bakery.jpeg" alt="Bakery">
+    </div>
+
     <div class="object-description">
-      <p><strong>Opis:</strong>The Bakery is a production building unlocked at experience level 2. It costs 20 money and take 5 seconds to build the Bakery. It gives players 3 experience when completed.
-</p>
+      <p>
+        The Bakery is a <span class="highlight">production building</span> unlocked at <span class="highlight">experience</span> level 2. 
+        It costs 20 <img src="images/money.png" class="icon" alt="coin"> and takes 5 seconds to build the Bakery. 
+        It gives players 3 <img src="images/experience.png" class="icon" alt="xp"> when completed.
+      </p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Przykładowe produkty - można ich dodać więcej -->
+      <div class="product-card">
+        <img src="images/Bread.png" alt="Bread">
+        <div><strong>Bread</strong></div>
+        <div class="level">Level 2</div>
+        <div class="time">⏱ 5 min</div>
+        <div class="rewards">💰 21 • ⭐ 3</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Cornbread.png" alt="Corn Bread">
+        <div><strong>Corn Bread</strong></div>
+        <div class="level">Level 7</div>
+        <div class="time">⏱ 30 min</div>
+        <div class="rewards">💰 72 • ⭐ 8</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Cookie.png" alt="Cookie">
+        <div><strong>Cookie</strong></div>
+        <div class="level">Level 10</div>
+        <div class="time">⏱ 1 h</div>
+        <div class="rewards">💰 104 • ⭐ 13</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/RaspberryMuffin.png" alt="Raspberry Muffin">
+        <div><strong>Raspberry Muffin</strong></div>
+        <div class="level">Level 19</div>
+        <div class="time">⏱ 45 min</div>
+        <div class="rewards">💰 140 • ⭐ 17</div>
+      </div>
+
+      <div class="product-card">
+        <img src="images/BlackberryMuffin.png" alt="Blackberry Muffin">
+        <div><strong>Blackberry Muffin</strong></div>
+        <div class="level">Level 26</div>
+        <div class="time">⏱ 45 min</div>
+        <div class="rewards">💰 172 • ⭐ 27</div>
+      </div>
+
+      <!-- Dodaj pozostałe produkty według tego wzoru -->
     </div>
   </main>
+
   <footer>
     <p>&copy; 2025 Strona fanowska gry Hay Day.</p>
   </footer>
 </body>
 </html>
+
