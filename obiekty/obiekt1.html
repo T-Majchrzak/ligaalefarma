@@ -114,55 +114,111 @@
 
     <div class="object-description">
       <p>
-        The Bakery is a <span class="highlight">production building</span> unlocked at <span class="highlight">experience</span> level 2. 
-        It costs 20 <img src="images/money.png" class="icon" alt="coin"> and takes 5 seconds to build the Bakery. 
-        It gives players 3 <img src="images/experience.png" class="icon" alt="xp"> when completed.
+        The Bakery is a <span class="highlight">production building</span> unlocked at <span class="highlight">experience</span> level 2. It costs 20 <img src="images/money.png" class="icon" alt="coin"> and takes 5 seconds to build the Bakery. It gives players 3 <img src="images/experience.png" class="icon" alt="xp"> when completed.
       </p>
     </div>
 
     <div class="products-grid">
       <!-- Przykładowe produkty - można ich dodać więcej -->
-      <div class="product-card">
-        <img src="images/Bread.png" alt="Bread">
-        <div><strong>Bread</strong></div>
-        <div class="level">Level 2</div>
-        <div class="time">⏱ 5 min</div>
-        <div class="rewards">💰 21 • ⭐ 3</div>
-      </div>
+      <div class="products-grid" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+  <!-- Lewa kolumna -->
+  <div style="flex: 1 1 400px;">
+    <div class="product-card">
+      <strong>Gingerbread Cookie</strong>
+      <div>Level 86</div>
+      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
+      <div>💰 273<br>⭐ 33</div>
+    </div>
 
-      <div class="product-card">
-        <img src="images/Cornbread.png" alt="Corn Bread">
-        <div><strong>Corn Bread</strong></div>
-        <div class="level">Level 7</div>
-        <div class="time">⏱ 30 min</div>
-        <div class="rewards">💰 72 • ⭐ 8</div>
-      </div>
+    <div class="product-card">
+      <strong>Banana Bread</strong>
+      <div>Level 91</div>
+      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
+      <div>💰 424<br>⭐ 50</div>
+    </div>
 
-      <div class="product-card">
-        <img src="images/Cookie.png" alt="Cookie">
-        <div><strong>Cookie</strong></div>
-        <div class="level">Level 10</div>
-        <div class="time">⏱ 1 h</div>
-        <div class="rewards">💰 104 • ⭐ 13</div>
-      </div>
+    <div class="product-card">
+      <strong>Macaroon</strong>
+      <div>Level 101</div>
+      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
+      <div>💰 421<br>⭐ 50</div>
+    </div>
 
-      <div class="product-card">
-        <img src="images/RaspberryMuffin.png" alt="Raspberry Muffin">
-        <div><strong>Raspberry Muffin</strong></div>
-        <div class="level">Level 19</div>
-        <div class="time">⏱ 45 min</div>
-        <div class="rewards">💰 140 • ⭐ 17</div>
-      </div>
+    <div class="product-card">
+      <strong>Pineapple Coconut Bars</strong>
+      <div>Level 120</div>
+      <div>⏱ 40 min<br>⭐⭐⭐ 34 min</div>
+      <div>💰 284<br>⭐ 34</div>
+    </div>
+  </div>
 
-      <div class="product-card">
-        <img src="images/BlackberryMuffin.png" alt="Blackberry Muffin">
-        <div><strong>Blackberry Muffin</strong></div>
-        <div class="level">Level 26</div>
-        <div class="time">⏱ 45 min</div>
-        <div class="rewards">💰 172 • ⭐ 27</div>
-      </div>
+  <!-- Prawa kolumna -->
+  <div style="flex: 1 1 400px;">
+    <div class="product-card">
+      <strong>Bread</strong>
+      <div>Level 2</div>
+      <div>⏱ 5 min<br>⭐⭐⭐ 4 min</div>
+      <div>💰 21<br>⭐ 3</div>
+    </div>
 
-      <!-- Dodaj pozostałe produkty według tego wzoru -->
+    <div class="product-card">
+      <strong>Corn Bread</strong>
+      <div>Level 7</div>
+      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
+      <div>💰 72<br>⭐ 8</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Cookie</strong>
+      <div>Level 10</div>
+      <div>⏱ 1h<br>⭐⭐⭐ 51 min</div>
+      <div>💰 104<br>⭐ 13</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Raspberry Muffin</strong>
+      <div>Level 19</div>
+      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
+      <div>💰 140<br>⭐ 17</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Blackberry Muffin</strong>
+      <div>Level 26</div>
+      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
+      <div>💰 226<br>⭐ 27</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Pizza</strong>
+      <div>Level 35</div>
+      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
+      <div>💰 190<br>⭐ 23</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Spicy Pizza</strong>
+      <div>Level 37</div>
+      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
+      <div>💰 226<br>⭐ 27</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Potato Bread</strong>
+      <div>Level 39</div>
+      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
+      <div>💰 284<br>⭐ 34</div>
+    </div>
+
+    <div class="product-card">
+      <strong>Frutti di Mare Pizza</strong>
+      <div>Level 45</div>
+      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
+      <div>💰 403<br>⭐ 48</div>
+    </div>
+  </div>
+</div>
+
     </div>
   </main>
 
