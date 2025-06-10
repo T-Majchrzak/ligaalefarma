@@ -61,34 +61,24 @@
 
     .products-grid {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      gap: 40px;
       justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1 1 400px;
     }
 
     .product-card {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
       padding: 10px;
-      width: 220px;
+      margin-bottom: 20px;
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-
-    .product-card img {
-      width: 48px;
-      margin-bottom: 5px;
-    }
-
-    .product-card .level {
       font-size: 14px;
-      color: #777;
-    }
-
-    .product-card .time, .product-card .rewards {
-      font-size: 14px;
-      margin-top: 5px;
     }
 
     footer {
@@ -97,17 +87,6 @@
       background: #fff;
       border-top: 1px solid #ddd;
       margin-top: 40px;
-  .product-card {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    font-size: 14px;
-}
-
     }
   </style>
 </head>
@@ -118,11 +97,7 @@
   </header>
 
   <main class="object-page">
-    
-    
-
-    <div class="placeholder-img"><img src="../images/Bakery.jpeg"></div>
-
+    <div class="placeholder-img"><img src="../images/Bakery.jpeg" alt="Bakery"></div>
 
     <div class="object-description">
       <p>
@@ -131,109 +106,24 @@
     </div>
 
     <div class="products-grid">
-      <!-- Przykładowe produkty - można ich dodać więcej -->
-      <div class="products-grid" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-  
-  <!-- Prawa kolumna -->
-  <div style="flex: 1 1 400px;">
-    <div class="product-card">
-      <strong>Bread</strong>
-      <div>Level 2</div>
-      <div>⏱ 5 min<br>⭐⭐⭐ 4 min</div>
-      <div>💰 21<br>⭐ 3</div>
-    </div>
+      <div class="column">
+        <div class="product-card"><strong>Bread</strong><div>Level 2</div><div>⏱ 5 min<br>⭐⭐⭐ 4 min</div><div>💰 21<br>⭐ 3</div></div>
+        <div class="product-card"><strong>Corn Bread</strong><div>Level 7</div><div>⏱ 30 min<br>⭐⭐⭐ 25 min</div><div>💰 72<br>⭐ 8</div></div>
+        <div class="product-card"><strong>Cookie</strong><div>Level 10</div><div>⏱ 1h<br>⭐⭐⭐ 51 min</div><div>💰 104<br>⭐ 13</div></div>
+        <div class="product-card"><strong>Raspberry Muffin</strong><div>Level 19</div><div>⏱ 45 min<br>⭐⭐⭐ 38 min</div><div>💰 140<br>⭐ 17</div></div>
+        <div class="product-card"><strong>Blackberry Muffin</strong><div>Level 26</div><div>⏱ 45 min<br>⭐⭐⭐ 38 min</div><div>💰 226<br>⭐ 27</div></div>
+        <div class="product-card"><strong>Pizza</strong><div>Level 35</div><div>⏱ 15 min<br>⭐⭐⭐ 12 min</div><div>💰 190<br>⭐ 23</div></div>
+        <div class="product-card"><strong>Spicy Pizza</strong><div>Level 37</div><div>⏱ 15 min<br>⭐⭐⭐ 12 min</div><div>💰 226<br>⭐ 27</div></div>
+        <div class="product-card"><strong>Potato Bread</strong><div>Level 39</div><div>⏱ 45 min<br>⭐⭐⭐ 38 min</div><div>💰 284<br>⭐ 34</div></div>
+        <div class="product-card"><strong>Frutti di Mare Pizza</strong><div>Level 45</div><div>⏱ 15 min<br>⭐⭐⭐ 12 min</div><div>💰 403<br>⭐ 48</div></div>
+      </div>
 
-    <div class="product-card">
-      <strong>Corn Bread</strong>
-      <div>Level 7</div>
-      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
-      <div>💰 72<br>⭐ 8</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Cookie</strong>
-      <div>Level 10</div>
-      <div>⏱ 1h<br>⭐⭐⭐ 51 min</div>
-      <div>💰 104<br>⭐ 13</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Raspberry Muffin</strong>
-      <div>Level 19</div>
-      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
-      <div>💰 140<br>⭐ 17</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Blackberry Muffin</strong>
-      <div>Level 26</div>
-      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
-      <div>💰 226<br>⭐ 27</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Pizza</strong>
-      <div>Level 35</div>
-      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
-      <div>💰 190<br>⭐ 23</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Spicy Pizza</strong>
-      <div>Level 37</div>
-      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
-      <div>💰 226<br>⭐ 27</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Potato Bread</strong>
-      <div>Level 39</div>
-      <div>⏱ 45 min<br>⭐⭐⭐ 38 min</div>
-      <div>💰 284<br>⭐ 34</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Frutti di Mare Pizza</strong>
-      <div>Level 45</div>
-      <div>⏱ 15 min<br>⭐⭐⭐ 12 min</div>
-      <div>💰 403<br>⭐ 48</div>
-    </div>
-    
-     
-  </div>
-  <!-- Lewa kolumna -->
-  <div style="flex: 1 1 400px;">
-   
-    <div class="product-card">
-      <strong>Gingerbread Cookie</strong>
-      <div>Level 86</div>
-      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
-      <div>💰 273<br>⭐ 33</div>
-    </div>
-    <div class="product-card">
-      <strong>Banana Bread</strong>
-      <div>Level 91</div>
-      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
-      <div>💰 424<br>⭐ 50</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Macaroon</strong>
-      <div>Level 101</div>
-      <div>⏱ 30 min<br>⭐⭐⭐ 25 min</div>
-      <div>💰 421<br>⭐ 50</div>
-    </div>
-
-    <div class="product-card">
-      <strong>Pineapple Coconut Bars</strong>
-      <div>Level 120</div>
-      <div>⏱ 40 min<br>⭐⭐⭐ 34 min</div>
-      <div>💰 284<br>⭐ 34</div>
-    </div>
-  </div>
-
-</div>
-
+      <div class="column">
+        <div class="product-card"><strong>Gingerbread Cookie</strong><div>Level 86</div><div>⏱ 30 min<br>⭐⭐⭐ 25 min</div><div>💰 273<br>⭐ 33</div></div>
+        <div class="product-card"><strong>Banana Bread</strong><div>Level 91</div><div>⏱ 30 min<br>⭐⭐⭐ 25 min</div><div>💰 424<br>⭐ 50</div></div>
+        <div class="product-card"><strong>Macaroon</strong><div>Level 101</div><div>⏱ 30 min<br>⭐⭐⭐ 25 min</div><div>💰 421<br>⭐ 50</div></div>
+        <div class="product-card"><strong>Pineapple Coconut Bars</strong><div>Level 120</div><div>⏱ 40 min<br>⭐⭐⭐ 34 min</div><div>💰 284<br>⭐ 34</div></div>
+      </div>
     </div>
   </main>
 
@@ -242,4 +132,3 @@
   </footer>
 </body>
 </html>
-
