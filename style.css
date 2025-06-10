@@ -21,7 +21,7 @@ h1 {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(60px, 150px));
   gap: 20px;
 }
 .card {
@@ -29,13 +29,14 @@ h1 {
   border-radius: 10px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s ease;
+  transform: scale(3); /* Dodane powiększenie 3x */
 }
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(3.06);
 }
 .placeholder-img {
   background: #ccc;
