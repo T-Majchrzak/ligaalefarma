@@ -37,7 +37,7 @@ body {
     }
 
     .object-image img {
-      text-align: center
+      display: block
       margin: auto;
       max-width: 300px;
     }
